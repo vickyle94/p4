@@ -2,12 +2,13 @@
 //create another object of the greeting card class for another holiday card (different holiday) that uses the other constructor (not previously used) as well as its functions.
 #include <iostream>
 #include <string>
+#include "p4classes.h"
 using namespace std;
 
 int main(){
     //make object
-    GreetingCards Holiday (1225,"Christmas");
+    GreetingCards CardObject (1225,"Christmas");
     //call printCard function to display card info
-    cout << Holiday.printCard();
+    cout << CardObject.printCard();
 }
 

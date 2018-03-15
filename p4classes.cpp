@@ -4,44 +4,39 @@
 #include <iostream>
 #include <string>
 using namespace std;
+#include "p4classes.h"
 
-class GreetingCards{
-    //define functions and constructors 
-    public:
-    //contructor w/ parameters (can assign values)
-    GreetingCards(int date, string holiday){
-        setDate(date);
-        setHoliday(holiday);
+    GreetingCards::GreetingCards(int date, string holiday){
+    void GreetingCards::setDate(){
+        date = d;
     }
-    void setDate(int x){
-        date = x;
-    }
-    int getDate(){
+    int GreetingCards::getDate(){
         return date;
     }
-
-    void setHoliday(string h){
-        holiday = h;
+    void GreetingCards::setHoliday(string h){
+        holiday;
     }
-    string getHoliday(){
+    string GreetingCards::getHoliday(){
         return holiday;
     }
+    }
+    
     //constructor without parameters (have default values)
-    GreetingCards(){
+    GreetingCards::GreetingCards(){
         setMessage("Merry Christmas! May you and your loved ones enjoy this holiday season.");
         setSender("Victoria Le");
     }
-    void setMessage(string m){
+    void GreetingCards::setMessage(string m){
         message = m;
     }
-    string getMessage(){
+    string GreetingCards::getMessage(){
         return message;
     }
 
-    void setSender (string s){
+    void GreetingCards::setSender (string s){
         sender = s;
     }
-    string getSender(){
+    string GreetingCards::getSender(){
         return sender;
     }
 
@@ -52,12 +47,7 @@ class GreetingCards{
         string getMessage;
         string getSender;
     }
-    //declare private variables
-    private:
-    int date;
-    string holiday;
-    string message;
-    string sender;
+
 };
 
 

@@ -1,19 +1,23 @@
 #ifndef P4ClASSES_H
 #define P4ClASSES_H
+#include <string>
+using namespace std;
 
 //define header class
 class GreetingCards
 {
   
     public:     //function protype here
-        setDate();
-        getDate();
-        setHoliday();
-        getHoliday();
-        setMessage();
-        getMessage();
-        setSender();
-        getSender();
+        GreetingCards(int, string);
+        void setDate();
+        int getDate();
+        void setHoliday();
+        string getHoliday();
+        void setMessage();
+        string getMessage();
+        void setSender();
+        string getSender();
+        void printCard();
 
     private:
     int date;
@@ -21,7 +25,6 @@ class GreetingCards
     string message;
     string sender;
 
-
 };
 
-#endif //HEADER_H
+#endif
